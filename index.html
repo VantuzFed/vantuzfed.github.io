@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <style>
     body{
-	background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 100, 100, 0.7)), url('/img/jhg.png');
-	//background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-    url('/img/jhg.png');
+	background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(0, 100, 100, 0.7)), url("img/jhg.png");
     color: red;
     font-family: comic sans ms; font-size: 14pt;}
 	  p { color: #00aa36;
-    text-shadow: #00e0a6 2px 2px 4px;}
+    text-shadow: rgba(0, 224, 166, 0.5) 2px 2px 4px;}
     h1 {cursor: n-resize;}
     div {
     box-shadow: 0 5px 10px rgba(0,0,0,0.9);
@@ -31,20 +29,17 @@
     </style>
   </head>
   <body>
- <h1 align="center"><p><marquee scrollamount='15'> Site is correctly under construction, please wait...</marquee></p></h1>
-  <div align="center"><p>IT'S AAAA MEEE MAAAAAAAAAAAAAARIOOOOOOOOOOOOOO</p>
-  <img src="/img/2.gif" height="300" weight="300">
-  <img src="/img/y4.gif" height="300" weight="300" >
-  <h3 align="center"><p>Хто ты <br>(не робит)</p></h3><
-  <input list="sas" align="center">
-  <datalist id="sas">
-    <option>Пидорас</option>
-    <option>Педофил</option>
-    <option>Гомогей</option>
-    <option>Ындус</option>
-    <option>СтивЖопеус</option>
-    <option>БиллГейс</option>
-    <option>Гомодрил</option>
-    <option>путин</option></div>
+ <h1 align="center"><p><marquee scrollamount='15'> Site is correctly under construction, wait a while...</marquee></p></h1>
+  <div align="center"><p>Soon, i'm planing to add "Phrase of day", yeah.<br>Example:<br>condoms is good, use them</p>
+  <img src="img/2.gif" height="300" weight="300">
+  <img src="img/y4.gif" height="300" weight="300" >
+  <p>Number of click</p>
+	<button onclick="myFunction()">Click Here</button>
+	<p id="1"></p>
+	<script>
+	function myFunction() {
+	var x = document.getElementById("1")
+	x.innerHTML = Math.floor((Math.random() * 100) + 1);}
+	</script>
   </body>
 </html>
