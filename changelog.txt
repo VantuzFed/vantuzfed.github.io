@@ -1,0 +1,10 @@
+new:
+  -(a little)code refactoring
+  -fully deleted marquee
+  -disabled opacity on hover
+  -snap on title
+  -sandbox file
+upcoming(almost resulted):
+  -new design
+  -full code refactoring
+  -more technologies(not so soon)
