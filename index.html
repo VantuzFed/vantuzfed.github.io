@@ -5,7 +5,7 @@
     <style>
     body{
       background: linear-gradient(rgba(65, 145, 206, 0.5), rgba(4,33, 35, 0.7)), url("img/jhg.png");
-      background-size: cover;
+      background-repeat: repeat, no-repeat;
       color: #e7e7e7;
       font-family: comic sans ms; font-size: 14pt;}
 	       .b { color: #e7e7e7;
@@ -19,15 +19,12 @@
            width: 600px;
 	         weight: 600px;
            background: linear-gradient(rgba(0, 100, 100, 0.7), rgba(0, 0, 100, 0.5));
-           //rgba(15, 0, 110, 0.6)
            padding: 10px;
            padding-right: 20px;
-           //border: solid 2px black;
            float: left;
            margin-left: 33%;
 	         margin-right: 33%;
 	         text-align: center;
-	         //opacity: 0.7;
            border-radius:4px;
          }
          .letter {
@@ -39,14 +36,11 @@
             padding:0 5px;
             box-shadow: 0 5px 10px rgba(0,0,0,0.9);
           }
-
-    //div:hover {opacity: 1;}
-    //span:hover {opacity: 1;}
     </style>
   </head>
   <body>
  <h1 align="center"><p class="a"><span class="letter">Site is currently under maintance, wait a while...</span></p></h1>
-  <div align="center"><p class="a">asa<br></p href="http://static.donationalerts.ru/audiodonations/64762/64762241.wav">
+  <div align="center"><p class="a" href="http://static.donationalerts.ru/audiodonations/64762/64762241.wav">asa<br></p>
   <img src="img/2.gif" height="300" weight="300">
   <img src="img/y4.gif" height="300" weight="300" >
   <p class="a">Number of click</p>
@@ -57,6 +51,5 @@
 	var x = document.getElementById("1")
 	x.innerHTML = Math.floor((Math.random() * 100) + 1);}
 	</script>
-  <img src="img/asd.png" height="300" weight="300">
   </body>
 </html>
