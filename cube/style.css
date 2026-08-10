@@ -1,0 +1,86 @@
+body{
+    background: url("/img/bliss.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin:0; 
+    overflow: hidden;
+    user-select: none;
+  } 
+  .task-bar{
+    color: white;
+    height: 30px;
+    width: 100%;
+    z-index: 10000000;
+    display: flex;
+    max-height: 30px;
+    position: fixed;
+    bottom: 0;
+    background: url("/img/taskbar_back.png");
+    box-sizing: border-box;
+    }
+   .task-bar_space{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    padding: 1px;
+    display: flex;
+    overflow: hidden;
+   }
+   .window {
+    position: absolute;
+    perspective: 800px;
+    transform: rotateY(0deg);
+    transform-origin: center;
+    animation-duration: 1s;
+    animation: slidein 1s ease-in-out, opac 0.8s ease-in;
+    z-index: 1;
+  }
+  .desktop{
+    height: 100%;
+  }
+  .butt{
+      width: 120px;
+      height: 10px;
+  }
+  .disabled {
+  pointer-events: none;
+  }
+  #start_menu{
+    background: url("/img/start_norm.png");
+    height: 30px;
+    width: 98px;
+  }
+  #start_menu:hover{
+    background: url("/img/start_hov.png");
+  }
+  #start_menu:active{
+    background: url("/img/start_press.png");
+  }
+  #chng_text::-webkit-scrollbar{
+    display: hidden;
+  }
+  #chng_text{
+    scrollbar-width: none;
+  }
+  @keyframes slidein {
+    from {
+      perspective: 800px;
+      transform: rotateY(60deg);
+   }
+
+   to {
+      perspective: 0px;
+      transform: rotateY(0deg);
+   }
+  }
+  @keyframes opac {
+    from {
+      opacity: 0;
+   }
+
+   to {
+    opacity: 1;
+   }
+  }

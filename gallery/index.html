@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" rel="shortcut icon" href="http://vantuzfed.ru/favicon.ico"/>
+    <script src="/gallery/gallery.js"></script>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <style>
+    body{
+      background: url("/img/bliss.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+/* (B) GALLERY WRAPPER */
+.gallery {
+  /* (B1) GRID LAYOUT - 3 IMAGES PER ROW */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+
+  /* (B2) OPTIONAL WIDTH RESTRICT */
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* (C) GALLERY IMAGES */
+.gallery img {
+  /* (C1) DIMENSION */
+  width: 100%;
+  height: 150px; /* optional */
+  padding: 10px;
+
+  /* (C2) COLORS */
+  border: 1px solid #ddd;
+  background: #fff;
+
+  /* (C3) IMAGE RESIZE */
+  /* cover | contain | fill | scale-down */
+  object-fit: contain;
+  position: relative;
+}
+
+/* (D) ON SMALL SCREENS - 2 IMAGES PER ROW */
+@media only screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* (E) OPTIONAL ZOOM ON HOVER */
+.gallery img:hover {
+  z-index: 9;
+  transform: scale(1.3);
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  transition: transform ease 0.5s;
+}
+
+/* (F) FULLSCREEN MODE */
+.gallery img.full {
+  position: fixed;
+  top: 0; left: 0; z-index: 999;
+  width: 100vw; height: 100vh;
+  object-fit: fit;
+  background: rgba(0, 0, 0, 0.7);
+}
+.gallery img.full:hover {
+  z-index: 999;
+  transform: none;
+}       
+    </style>
+        <script src="/redirection-mobile.js"></script>
+        <script>
+               SA.redirection_mobile({
+                 redirection_param : "mobile_redirection",
+                 mobile_prefix : "m",
+                 cookie_hours : "2" 
+                 });
+        </script>    
+  </head>
+  <body>
+
+    <div class="window" style="width: 500px;  margin-left: 37%;">
+      <div class="title-bar">
+        <div class="title-bar-text">Command Prompt</div>
+        <div class="title-bar-controls">
+          <button onclick="window.location.href='/img/dfsf.jpg';" aria-label="Minimize"></button>
+          <button onclick="window.location.href='/img/ohfuck.jpg';" aria-label="Maximize"></button>
+          <button onclick="window.location.href='about:blank';" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <pre>Microsoft&#10094;R&#10095; Windows DOS 
+    &#10094;C&#10095; Copyright Microsoft Corp 1990-2001.
+          <br>C:&#92;WINDOWS&#92;SYSTEM32><a href="javascript:history.back()">
+ dP""b8    db    88     88     888888 88""Yb Yb  dP
+dP   `"   dPYb   88     88     88__   88__dP  YbdP
+Yb  "88  dP__Yb  88  .o 88  .o 88""   88"Yb    8P
+ YboodP dP""""Yb 88ood8 88ood8 888888 88  Yb  dP</a>
+      </div>
+    </div>
+<p></p>
+
+<div class="window" style="width: 1050px; margin-left: 23%;  height: 550px;">
+    <div class="title-bar">
+      <div class="title-bar-text">File Viewer</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close" onclick="window.location.href='/index.html';"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <h4 style="text-align: center;">Wall of Fame</h4>
+      <div class="gallery" style="width: 900px; height: 350px;">
+        <img src="/img/lenin.jpg" title="Lenin and Coca-cola artwork">
+        <img src="/img/dostoinstvo.jpg" title="Russian's Empire Tinder">
+        <img src="/img/vova.png" title="Legendary picture of vova">
+        <img src="/img/kronk.png" title="The best man in the world">
+
+        <img src="/img/wave.jpg" title="My PC">
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>

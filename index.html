@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://vantuzfed.ru/favicon.ico"/>
+    <link rel="stylesheet" href="/!styles/index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/xp.css/dist/XP.css"/>
+  <link rel="preload" as="image" href="/img/start_hov.png">
+  <link rel="preload" as="image" href="/img/start_press.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="/!scripts/title.js"></script>
+    <script src="/!scripts/redirection-mobile.js"></script>
+    <script src="/!scripts/redirect.js"></script>
+    <script src="/!scripts/head.js"></script>
+    <title>> </title>
+  </head>
+  <body>
+  <div class="desktop">
+    <div class="windows window resetable one drag" id="cls1" style="width: 870px; top: 5px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Command Prompt</div>
+        <div class="title-bar-controls">
+          <button onclick="sas(fold1)" aria-label="Minimize"></button>
+          <button onclick="fullscr()" aria-label="Maximize"></button>
+          <button onclick="cls(cls1)" aria-label="Close"></button>
+        </div>
+      </div>
+      <div id="fold1">
+        <pre>Microsoft❮R❯ Windows DOS 
+    ❮C❯ Copyright Microsoft Corp 1990-2001.
+          <br>C:\WINDOWS\SYSTEM32>
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+'##::::'##::::'###::::'##::: ##:'########:'##::::'##:'########:'########:'########:'########::
+ ##:::: ##:::'## ##::: ###:: ##:... ##..:: ##:::: ##:..... ##:: ##.....:: ##.....:: ##.... ##:
+ ##:::: ##::'##:. ##:: ####: ##:::: ##:::: ##:::: ##::::: ##::: ##::::::: ##::::::: ##:::: ##:
+ ##:::: ##:'##:::. ##: ## ## ##:::: ##:::: ##:::: ##:::: ##:::: ######::: ######::: ##:::: ##:
+. ##:: ##:: #########: ##. ####:::: ##:::: ##:::: ##::: ##::::: ##...:::: ##...:::: ##:::: ##:
+:. ## ##::: ##.... ##: ##:. ###:::: ##:::: ##:::: ##:: ##:::::: ##::::::: ##::::::: ##:::: ##:
+::. ###:::: ##:::: ##: ##::. ##:::: ##::::. #######:: ########: ##::::::: ########: ########::
+:::...:::::..:::::..::..::::..:::::..::::::.......:::........::..::::::::........::........:::</pre>
+      </div>
+    </div>
+
+
+
+<div style="display: flex;">
+ <div class="windows window resetable one bel drag" style="width: 220px; height: fit-content; text-align: center;" id="cls2">
+  <div class="title-bar">
+    <div class="title-bar-text">Links</div>
+    <div class="title-bar-controls">
+      <button onclick="sas(fold2)" aria-label="Minimize"></button>
+      <button onclick="cls(cls2)" aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body" id="fold2">
+<form action="https://t.me/vantuzfed"><button class="butt" type="submit"><img src="/img/tel.png" width="13" height="13" style="vertical-align: bottom">  My Telegram</button></form> 
+<p></p>
+<form action="https://www.youtube.com/@vantuzfed"><button class="butt" type="submit"><img src="/img/you.png" width="18" height="13" style="vertical-align: bottom">  My YouTube</button></form> 
+<p></p>
+<form action="https://steamcommunity.com/id/vantuzfed"><button class="butt" type="submit"><img src="/img/steam.png" width="13" height="13" style="vertical-align: bottom">  My Steam Rus</button></form> 
+<p></p>
+<form action="https://steamcommunity.com/id/vantuztur"><button class="butt" type="submit"><img src="/img/steam.png" width="13" height="13" style="vertical-align: bottom">  My Steam TL</button></form> 
+<p></p>
+<form action="https://twitter.com/vantuzfed"><button class="butt" type="submit"><img src="/img/twit.png" width="16" height="13" style="vertical-align: bottom">  My Twitter</button></form>
+<p></p> 
+<form action="https://github.com/VantuzFed"><button class="butt" type="submit"><img src="/img/git.png" width="14" height="13" style="vertical-align: bottom">  My Github</button></form> 
+<p></p> 
+<form action="https://www.reddit.com/user/VantuzFed"><button class="butt" type="submit"><img src="/img/reddit.png" width="14" height="13" style="vertical-align: bottom">  My Reddit</button></form>
+<p></p>  
+<form action="https://soundcloud.com/vantuzfed"><button class="butt" type="submit"><img src="/img/sound.png" width="14" height="13" style="vertical-align: bottom">  My SoundCloud</button></form> 
+<p></p> 
+</div>
+</div>
+
+<div class="windows window resetable two bel drag" style="width: 220px; height: fit-content; text-align: center;" id="cls3">
+  <div class="title-bar">
+    <div class="title-bar-text">Utils</div>
+    <div class="title-bar-controls">
+      <button onclick="sas(fold3)" aria-label="Minimize"></button>
+      <button onclick="cls(cls3)" aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body" id="fold3">
+<form action="/gallery/"><button class="butt" type="submit"><img src="/img/pic.png" width="14" height="13" style="vertical-align: bottom">  Gallery</button></form>
+<p></p>
+<form action="/files/"><button class="butt" type="submit"><img src="/img/folder.png" width="14" height="13" style="vertical-align: bottom">  Files</button></form>
+<p></p>
+<form action="/m/"><button class="butt" type="submit"><img src="/img/mob.png" width="14" height="13" style="vertical-align: bottom">  Mobile Ver.</button></form>
+<p></p>
+<button onclick="chnglg(chng)" class="butt" type="submit"><img src="" width="14" height="13" style="vertical-align: bottom">  Changelog</button>
+<p></p>
+<button onclick="webamp.reopen();" class="butt" type="submit"><img src="/img/winamp.png" width="14" height="13" style="vertical-align: bottom">  Winamp</button>
+</div>
+</div>
+
+<div class="windows window resetable three bel drag" style="width: 400px; height: fit-content; text-align: center" id="cls4">
+  <div class="title-bar">
+    <div class="title-bar-text">Minecraft Server</div>
+    <div class="title-bar-controls">
+      <button onclick="sas(fold4)" aria-label="Minimize"></button>
+      <button onclick="window.location.href='https://vantuzfed.github.io/old';" aria-label="Maximize"></button>
+      <button onclick="cls(cls4)" aria-label="Close"></button>
+    </div>
+  </div>
+  <div id="fold4">
+<h4>
+<img id="icon">
+<p id="ip" style="user-select: text;"></p>
+<p id="vers"></p>
+<p id="load"><progress></progress></p>
+<p id="pl_on"></p>
+<p id="online"></p>
+</h4>
+  <p><input id="ipget" type="text" value="hypixel.net" /></p>
+<div style="display: flex; margin-left: 20%;">
+<p>
+<button class="butt" onclick="server_fetch()" type="submit">Refresh</button>
+<button id="but_reset" class="butt" onclick="server_reset()" type="submit">Reset</button>
+</p>
+</div>
+</div>
+</div>
+
+<div class="windows window drag" style="width: fit-content; height: fit-content; top: 100; left: 100;" id="chng">
+  <div class="title-bar" style="min-width: 400px;">
+    <div class="title-bar-text">Changelog</div>
+    <div class="title-bar-controls">
+      <button onclick="sas(osel)" aria-label="Minimize"></button>
+      <button onclick="maxwin()" aria-label="Maximize"></button>
+      <button onclick="chnglg(chng)" aria-label="Close"></button>
+    </div>
+  </div>
+  <div id="osel" class="window-body" style="margin-left: 12px; margin-right: 12px; margin-bottom: 8px;">
+    <pre id="chng_text" style="height: 380px; width: 676px; min-width: 400px; min-height: 200px; overflow: scroll; color: black; background: #ffffff; resize: both; user-select: text;"></pre>
+  </div>
+</div>
+</div>
+
+<div id="app"></div>
+<script src="https://unpkg.com/webamp"></script>
+<script>
+    const app = document.getElementById("app")
+    const webamp = new Webamp({
+
+ windowLayout: {
+    main: {
+      position: { top: 0, left: 0 },
+      shadeMode: false,
+      closed: false,
+    },
+    equalizer: {
+      position: { top: 0, left: 0 },
+      shadeMode: true,
+      closed: true,
+    },
+    playlist: {
+      position: { top: 0, left: 0 },
+      shadeMode: false,
+      // Number of additional sprites by which to expand the window.
+      size: { extraHeight: 1, extraHeight: 10 },
+      closed: false,
+    },
+  },
+zIndex: 99999,
+
+
+});
+    webamp.renderWhenReady(app);
+
+webamp.close();
+</script>
+<div class="task-bar">
+  <div id="start_menu" role="button" onclick="reset()"></div>
+  <div class="task-bar_space" style="text-align: center;"></div>
+  <div><img src="/img/taskbar_notif.png"></div>
+</div>
+<script src="/!scripts/body.js"></script>
+  </body>
+</html>

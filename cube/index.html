@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Cube</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style>
+    body{
+        background: url("/img/stone_bricks.png");
+    }
+.scene {
+  margin: auto;
+  margin-top: 20%;
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+}
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 5s infinite linear;
+}
+.cube_f {
+  opacity: 0,5;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+button{
+margin-top: 10%;
+height: 30pt;
+width: 300pt;
+background: url(/img/mine_reg.png) center / cover;
+border: 0;
+}
+button:hover{
+background: url(/img/mine_hov.png) center / cover;
+}
+button:active{
+background: url(/img/mine_press.png) center / cover;
+}
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateX(-360deg) rotateY(360deg);
+  }
+}
+.cube_f-front{transform: rotateY(0deg) translateZ(100px);}
+.cube_f-right{transform: rotateY(90deg) translateZ(100px);}
+.cube_f-back{transform: rotateY(180deg) translateZ(100px);}
+.cube_f-left{transform: rotateY(-90deg) translateZ(100px);}
+.cube_f-top{transform: rotateX(90deg) translateZ(100px);}
+.cube_f-bottom{transform: rotateX(-90deg) translateZ(100px);}
+  </style>
+ </head>
+ <body>
+ <div class="scene">
+  <div class="cube">
+   <img id="side_1" src="/img/grass_block_side.png" class="cube_f cube_f-front">
+   <img id="side_2" src="/img/grass_block_side.png" class="cube_f cube_f-back">
+   <img id="side_3" src="/img/grass_block_side.png" class="cube_f cube_f-right">
+   <img id="side_4" src="/img/grass_block_side.png" class="cube_f cube_f-left">
+   <img id="side_5" src="/img/grass_block_top.png" class="cube_f cube_f-top">
+   <img id="side_6" src="/img/dirt.png" class="cube_f cube_f-bottom">
+  </div>
+</div>
+<button onclick="sas_z()">ZHIRINOVSKIY</button>
+<button onclick="sas_m()">MINECRAP</button>
+<script>
+  function sas_z(){
+$("img").attr("src", "/img/dfsf.jpg");
+  }
+  function sas_m(){
+$("#side_1").attr("src", "/img/grass_block_side.png");
+$("#side_2").attr("src", "/img/grass_block_side.png");
+$("#side_3").attr("src", "/img/grass_block_side.png");
+$("#side_4").attr("src", "/img/grass_block_side.png");
+$("#side_5").attr("src", "/img/grass_block_top.png");
+$("#side_6").attr("src", "/img/dirt.png");
+  }
+  function sas_p(){
+$("img").attr("src", "/img/putin.jpg");
+  }
+  function sas_p_c(){
+$("img").attr("src", "/img/putin_c.webp");
+  }
+  function sas_p_e(){
+$("img").attr("src", "/img/putin_e.jpg");
+  }
+</script>
+
+ </body>
+</html>
+
